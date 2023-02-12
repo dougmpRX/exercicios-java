@@ -11,21 +11,21 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		Employee employee = new Employee();
-		
+
 		System.out.print("Name: ");
 		employee.name = sc.nextLine();
 		System.out.print("Gross Salary: ");
 		employee.grossSalary = sc.nextDouble();
 		System.out.print("Tax: ");
 		employee.tax = sc.nextDouble();
-		
+
 		System.out.println(employee);
-		
+
 		System.out.print("Which percentage to increase salary? ");
 		employee.increaseSalary(sc.nextDouble());
-		
+
 		System.out.printf("Updated data: $ %.2f", employee.netSalary());
-		
+
 		sc.close();
 	}
 

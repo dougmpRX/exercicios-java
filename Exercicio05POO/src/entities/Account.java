@@ -4,12 +4,12 @@ public class Account {
 	private int accountNumber;
 	private String accountHolder;
 	private double balance;
-		
+
 	public Account(int accountNumber, String accountHolder) {
 		this.accountNumber = accountNumber;
 		this.accountHolder = accountHolder;
 	}
-	
+
 	public Account(int accountNumber, String accountHolder, double initialDeposit) {
 		this.accountNumber = accountNumber;
 		this.accountHolder = accountHolder;
@@ -31,17 +31,18 @@ public class Account {
 	public double getBalance() {
 		return balance;
 	}
-		
+
 	public void deposit(double amount) {
 		balance += amount;
 	}
-	
+
 	public void withdraw(double amount) {
 		balance -= amount + 5.00;
 	}
-	
+
+	@Override
 	public String toString() {
 		return "\nAccount data:\n" + "Account " + accountNumber + ", Holder: " + accountHolder + ", Balance: $ " + String.format("%.2f", balance);
 	}
-	
+
 }

@@ -3,7 +3,7 @@ package entities;
 public class Room {
 	private String name;
 	private String email;
-	
+
 	public Room(String name, String email) {
 		this.name = name;
 		this.email = email;
@@ -21,6 +21,6 @@ public class Room {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
+
+
 }
