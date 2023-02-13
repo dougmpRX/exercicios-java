@@ -56,6 +56,8 @@ public class Program {
 		for (Product item : products) {
 			System.out.println(item.priceTag());
 		}
+		
+		sc.close();
 	}
 
 }
